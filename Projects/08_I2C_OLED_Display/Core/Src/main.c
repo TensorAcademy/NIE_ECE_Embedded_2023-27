@@ -97,13 +97,13 @@ int main(void)
   ssd1306_Fill(Black);
    ssd1306_UpdateScreen();
 
-   ssd1306_SetCursor(10, 2);
-     ssd1306_WriteString("TENSORBOT", Font_11x18, White);
-     ssd1306_SetCursor(2, 24);
-     ssd1306_WriteString("ACADEMY", Font_11x18, White);
+   ssd1306_SetCursor(15, 5);
+    ssd1306_WriteString("TENSOR", Font_11x18, White);
+    ssd1306_SetCursor(15, 30);
+    ssd1306_WriteString("ACADEMY", Font_11x18, White);
 
      /* Update screen */
-     ssd1306_UpdateScreen();
+    ssd1306_UpdateScreen();
 
   /* USER CODE END 2 */
 
