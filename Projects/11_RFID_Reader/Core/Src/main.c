@@ -107,6 +107,20 @@ int main(void)
 		status = MFRC522_Anticoll(str);
 		memcpy(sNum, str, 5);
 		HAL_Delay(200);
+    if((str[2]==75) && (str[3]==22) && (str[4]==115) )
+	     {
+	       HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,0);
+	       HAL_Delay(100);
+	       }
+	     else if((str[2]==209) && (str[3]==215) && (str[4]==167) )
+	       {
+	       HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,0);
+	       HAL_Delay(2000);
+	     }
+	     else
+	     {
+	       HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,1);
+	     }
   }
   /* USER CODE END 3 */
 }
